@@ -6,7 +6,11 @@ var pubnub = require('pubnub').init({
     subscribe_key: config.pubnub.subscribe_key
 });
 
+var channel = function(name){
+    return name + (config.isDevelopment ? '-dev' : '');
+};
+
 pubnub.subscribe({
-    channel: 'login_email',
+    channel: channel('user:loginEmail'),
     callback: loginEmail.send
 });
