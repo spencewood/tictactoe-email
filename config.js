@@ -6,6 +6,6 @@ module.exports = {
     },
     postmark: {
         api_key: process.env.POSTMARK_API_KEY,
-        from_email: process.env.POSTMARK_FROM_ADDRESS || 'ttt@ttt.com'
+        from_email: process.env.POSTMARK_FROM_ADDRESS
     }
 };
