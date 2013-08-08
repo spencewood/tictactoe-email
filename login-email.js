@@ -12,7 +12,8 @@ module.exports = {
             html: __dirname + '/templates/login.html',
             text: __dirname + '/templates/login.txt',
             data: {
-                token: message.token
+                token: message.token,
+                baseUrl: config.baseUrl
             }
         }, function(err, res){
             if(err !== null){
