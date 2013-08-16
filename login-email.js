@@ -19,6 +19,9 @@ module.exports = {
             if(err !== null){
                 console.error(err, res);
             }
+            else{
+                console.info('login info sent to ' + message.email);
+            }
         });
     }
 };
