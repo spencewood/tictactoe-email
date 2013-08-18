@@ -20,7 +20,7 @@ module.exports = {
                 console.error(err, res);
             }
             else{
-                console.info('login info sent to ' + message.email);
+                console.info('login info sent to ' + message.email, message.token);
             }
         });
     }
